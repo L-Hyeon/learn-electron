@@ -1,7 +1,136 @@
+@font-face {
+	font-family: "HSSaemaul-Regular";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSSaemaul-Regular.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	height: 100%;
+}
+
 body {
-	font-family: monospace;
-	font-size: 32px;
-	background-color: black;
-	color: greenyellow;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	background-color: #3e837f;
+	min-height: 100%;
+	font-family: "HSSaemaul-Regular";
+}
+
+.layout {
+	justify-content: center;
+	margin-top: 3rem;
+	min-width: 600px;
+}
+
+.title {
+	padding: 2rem;
 	text-align: center;
+	color: #ffffff;
+	font-size: 5rem;
+}
+
+.wrapper {
+	border-radius: 10px;
+	background-color: #eee;
+}
+
+.input-box {
+	display: flex;
+	height: 3rem;
+	border-bottom: 1px solid #aaa;
+	justify-content: space-between;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.todo-input {
+	width: 90%;
+	border: 0;
+	outline: none;
+	font-size: 1.3rem;
+	font-family: "HSSaemaul-Regular";
+	background-color: transparent;
+	line-height: 3rem;
+	vertical-align: middle;
+	color: #3e837f;
+}
+.todo-input::placeholder {
+	color: #3e837f;
+}
+
+.input-button {
+	width: 10%;
+	background-color: transparent;
+	color: #3e837f;
+	font-size: 2rem;
+	border: 0;
+	line-height: 3rem;
+	vertical-align: middle;
+}
+
+.todo-list {
+	padding: 0;
+	margin: 0;
+}
+
+.todo-item {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 3rem;
+	padding: 0 0 0 1rem;
+}
+.todo-item:hover {
+	background-color: #3e838034;
+}
+
+.todo-content {
+	font-size: 1.3rem;
+	color: #3e837f;
+	width: 90%;
+}
+
+.delBtn {
+	background-color: transparent;
+	height: 3rem;
+	height: 2rem;
+	width: 2rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+	border: 0;
+	width: 10%;
+	color: #3e837f;
+}
+.delBtn:hover {
+	color: red;
+}
+
+.edit-input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	border: 0;
+	margin: 0;
+	background-color: #eee;
+	padding-left: 1rem;
+	font-size: 1.3rem;
+	font-family: "HSSaemaul-Regular";
+	line-height: 3rem;
+	vertical-align: middle;
+	color: #3e837f;
+}
+
+.item-counter {
+	border-top: 1px solid #aaa;
+	color: #3e837f;
+	font-size: 1.3rem;
+	height: 3rem;
+	line-height: 3rem;
+	vertical-align: middle;
+	padding-left: 1rem;
 }
